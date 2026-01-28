@@ -1,9 +1,8 @@
 import pandas as pd
 import joblib
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import f1_score
-import os
 
 df = pd.read_csv("data/raw/diabetes.csv")
 
@@ -22,10 +21,7 @@ model = RandomForestClassifier(
 
 model.fit(X_train, y_train)
 
-preds = model.predict(X_test)
-print("F1:", f1_score(y_test, preds, average="macro"))
-
 os.makedirs("models", exist_ok=True)
 joblib.dump(model, "models/model.pkl")
 
-print("Model saved!")
+print("Model trained and saved.")
