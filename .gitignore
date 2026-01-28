@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environment
+venv/
+.env/
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Data (tracked by DVC, not Git)
+data/
+!data/*.dvc
+
+# Models (tracked by DVC)
+models/
+!models/*.dvc
+
+# MLflow
+mlruns/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# VSCode
+.vscode/
