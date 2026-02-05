@@ -247,14 +247,6 @@ The predictive model is not optimized for clinical or production healthcare use.
 
 ---
 
-## 👨‍💻 Author
-
-**Om Muddebihal**
-M.S. Data Science — IIT Bombay
-Research Project Scientist — Disease Modelling
-
----
-
 ## ⭐ Key Takeaway
 
 This project demonstrates the full lifecycle of deploying a machine learning system — from experimentation and artifact management to containerization and cloud inference — emphasizing real-world MLOps practices over model development.
